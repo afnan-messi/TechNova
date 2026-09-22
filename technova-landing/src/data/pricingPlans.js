@@ -1,0 +1,107 @@
+export const pricingPlans = [
+  {
+    id: 'basic',
+    name: 'Basic',
+    monthlyPrice: 249,
+    yearlyPrice: 2490,
+    description: 'A focused launch plan for a clear first website without extra complexity.',
+    isPopular: false,
+    ctaText: 'Get Started',
+    features: [
+      { name: 'Up to 5 pages', included: true },
+      { name: 'Responsive Design', included: true },
+      { name: 'Basic SEO', included: true },
+      { name: 'Email Support', included: true },
+      { name: '2 revision rounds', included: true },
+      { name: 'CMS Integration', included: false },
+      { name: 'Custom Integrations', included: false },
+      { name: 'Advanced Analytics', included: false },
+      { name: 'Priority Support', included: false },
+      { name: 'Dedicated Manager', included: false },
+    ],
+  },
+  {
+    id: 'professional',
+    name: 'Professional',
+    monthlyPrice: 649,
+    yearlyPrice: 6290,
+    description: 'The complete product partnership for growing teams that need more room to scale.',
+    isPopular: true,
+    ctaText: 'Most Popular — Get Started',
+    features: [
+      { name: 'Up to 15 pages', included: true },
+      { name: 'Responsive Design', included: true },
+      { name: 'Advanced SEO', included: true },
+      { name: 'Priority Support', included: true },
+      { name: 'CMS Integration', included: true },
+      { name: 'Custom Integrations', included: true },
+      { name: 'Advanced Analytics', included: true },
+      { name: '4 revision rounds', included: true },
+      { name: 'Dedicated Manager', included: false },
+      { name: 'Custom Automation', included: false },
+    ],
+  },
+  {
+    id: 'enterprise',
+    name: 'Enterprise',
+    monthlyPrice: 1499,
+    yearlyPrice: 14390,
+    description: 'A dedicated team and flexible roadmap for ambitious products that need to move fast.',
+    isPopular: false,
+    ctaText: 'Contact Sales',
+    features: [
+      { name: 'Unlimited pages', included: true },
+      { name: 'Responsive Design', included: true },
+      { name: 'Technical SEO', included: true },
+      { name: 'Priority Support', included: true },
+      { name: 'CMS Integration', included: true },
+      { name: 'Custom Integrations', included: true },
+      { name: 'Advanced Analytics', included: true },
+      { name: 'Dedicated Manager', included: true },
+      { name: 'Custom Automation', included: true },
+      { name: 'SLA & 24/7 coverage', included: true },
+    ],
+  },
+]
+
+export const comparisonFeatures = [
+  { name: 'Responsive design', basic: true, professional: true, enterprise: true },
+  { name: 'SEO setup', basic: true, professional: true, enterprise: true },
+  { name: 'Email support', basic: true, professional: true, enterprise: true },
+  { name: 'CMS integration', basic: false, professional: true, enterprise: true },
+  { name: 'Custom integrations', basic: false, professional: true, enterprise: true },
+  { name: 'Advanced analytics', basic: false, professional: true, enterprise: true },
+  { name: 'Priority support', basic: false, professional: true, enterprise: true },
+  { name: 'Revision rounds', basic: true, professional: true, enterprise: true },
+  { name: 'Dedicated manager', basic: false, professional: false, enterprise: true },
+  { name: 'Custom automation', basic: false, professional: false, enterprise: true },
+  { name: 'SLA & 24/7 coverage', basic: false, professional: false, enterprise: true },
+  { name: 'Quarterly strategy reviews', basic: false, professional: true, enterprise: true },
+]
+
+export const pricingFaqs = [
+  {
+    question: 'Can I upgrade or downgrade my plan later?',
+    answer: 'Yes. You can move between plans at any time. Upgrades take effect immediately, and downgrades apply at the start of your next billing cycle so nothing is interrupted mid-project.',
+  },
+  {
+    question: 'Is there a setup fee?',
+    answer: 'No. The monthly and yearly prices you see are the full plan investment. There are no hidden onboarding charges, setup fees, or surprise add-ons.',
+  },
+  {
+    question: 'What happens if I need custom features not listed?',
+    answer: 'We scope custom work as a clear add-on or fold it into an Enterprise engagement. You will always see the extra effort, timeline, and cost before anything begins.',
+  },
+  {
+    question: 'Do you offer discounts for nonprofits or startups?',
+    answer: 'Yes. Early-stage startups and registered nonprofits can request a tailored rate. Share a little context on the contact page and our team will follow up with options.',
+  },
+  {
+    question: 'What payment methods do you accept?',
+    answer: 'We accept major credit cards, ACH bank transfer, and invoicing for annual Enterprise plans. All payments are processed securely, and receipts are sent automatically.',
+  },
+  {
+    question: 'Is there a money-back guarantee?',
+    answer: 'If we are not the right fit in the first 14 days of a new engagement, we will refund unused work in full. After that, remaining time is billed only for work already delivered.',
+  },
+]
