@@ -12,8 +12,8 @@ import CTA from './components/CTA'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import RobotMascot from './components/RobotMascot'
+import QuickContact from './components/QuickContact'
 import Preloader from './components/Preloader'
-import FocusSection from './components/FocusSection'
 import PriceCalculator from './components/PriceCalculator'
 import AboutPage from './pages/AboutPage'
 import ServicesPage from './pages/ServicesPage'
@@ -22,7 +22,7 @@ import ContactPage from './pages/ContactPage'
 import PricingPage from './pages/PricingPage'
 
 function HomePage() {
-  return <main><FocusSection><Hero /></FocusSection><FocusSection><About /></FocusSection><FocusSection><Services /></FocusSection><FocusSection><Portfolio /></FocusSection><FocusSection><Testimonials /></FocusSection><FocusSection><Pricing /></FocusSection><FocusSection><PriceCalculator /></FocusSection><FocusSection><CTA /></FocusSection><FocusSection><Contact /></FocusSection></main>
+  return <main><Hero /><About /><Services /><Portfolio /><Testimonials /><Pricing /><PriceCalculator /><CTA /><Contact /></main>
 }
 
 function App() {
@@ -49,7 +49,7 @@ function App() {
     return () => window.clearTimeout(scrollTimer)
   }, [loading, location.hash, location.pathname])
 
-  return <><AnimatePresence>{showPreloader && <Preloader isExiting={!loading} onExitComplete={() => setShowPreloader(false)} />}</AnimatePresence><Navbar /><Routes><Route path="/" element={<HomePage />} /><Route path="/about" element={<AboutPage />} /><Route path="/services" element={<ServicesPage />} /><Route path="/portfolio" element={<PortfolioPage />} /><Route path="/contact" element={<ContactPage />} /><Route path="/pricing" element={<PricingPage />} /></Routes><Footer /><RobotMascot /></>
+  return <><AnimatePresence>{showPreloader && <Preloader isExiting={!loading} onExitComplete={() => setShowPreloader(false)} />}</AnimatePresence><Navbar /><Routes><Route path="/" element={<HomePage />} /><Route path="/about" element={<AboutPage />} /><Route path="/services" element={<ServicesPage />} /><Route path="/portfolio" element={<PortfolioPage />} /><Route path="/contact" element={<ContactPage />} /><Route path="/pricing" element={<PricingPage />} /></Routes><Footer /><RobotMascot />{location.pathname !== '/contact' && <QuickContact />}</>
 }
 
 export default App

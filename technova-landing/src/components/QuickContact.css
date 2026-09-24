@@ -1,0 +1,58 @@
+.quick-contact {
+  position: fixed;
+  left: .75rem;
+  bottom: 1.5rem;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+
+.quick-contact-button {
+  display: grid;
+  width: 3.25rem;
+  height: 3.25rem;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.35rem;
+  box-shadow: 0 .75rem 2rem rgba(0, 0, 0, .35);
+  transition: transform .3s cubic-bezier(.4, 0, .2, 1), box-shadow .3s ease;
+}
+
+.quick-contact-whatsapp {
+  background: #25d366;
+}
+
+.quick-contact-phone {
+  background: var(--gradient-2);
+}
+
+.quick-contact-button:hover,
+.quick-contact-button:focus-visible {
+  transform: scale(1.1);
+}
+
+.quick-contact-whatsapp:hover,
+.quick-contact-whatsapp:focus-visible {
+  box-shadow: 0 1rem 2.5rem rgba(37, 211, 102, .45);
+}
+
+.quick-contact-phone:hover,
+.quick-contact-phone:focus-visible {
+  box-shadow: 0 1rem 2.5rem rgba(255, 107, 53, .45);
+}
+
+@media (max-width: 600px) {
+  .quick-contact {
+    left: .6rem;
+    bottom: 1rem;
+    gap: .5rem;
+  }
+
+  .quick-contact-button {
+    width: 2.9rem;
+    height: 2.9rem;
+    font-size: 1.15rem;
+  }
+}

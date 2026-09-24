@@ -20,11 +20,11 @@
   position: relative;
   width: min(18rem, calc(100vw - 5.5rem));
   padding: 1rem 2.1rem 1rem 1rem;
-  border: 1px solid rgba(79, 157, 255, .32);
+  border: 1px solid rgba(17, 24, 39, .25);
   border-radius: 1rem;
-  color: var(--text-light);
+  color: rgba(245, 247, 250, .92);
   background: rgba(19, 27, 46, .94);
-  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, .3);
+  box-shadow: 0 1rem 2.5rem rgba(17, 24, 39, .25);
   backdrop-filter: blur(12px);
   pointer-events: auto;
   transition: opacity .25s ease, transform .25s ease;
@@ -38,8 +38,8 @@
   height: 1rem;
   content: '';
   background: rgba(19, 27, 46, .94);
-  border-top: 1px solid rgba(79, 157, 255, .32);
-  border-right: 1px solid rgba(79, 157, 255, .32);
+  border-top: 1px solid rgba(17, 24, 39, .25);
+  border-right: 1px solid rgba(17, 24, 39, .25);
   transform: rotate(45deg);
 }
 
@@ -74,8 +74,8 @@
 
 .robot-close:hover,
 .robot-close:focus-visible {
-  color: var(--text-light);
-  background: rgba(255, 255, 255, .1);
+  color: #fff;
+  background: rgba(255, 255, 255, .12);
 }
 
 .robot-button {
@@ -89,7 +89,7 @@
   border-radius: 50%;
   color: #fff;
   background: var(--gradient-1);
-  box-shadow: 0 .75rem 2rem rgba(79, 157, 255, .35), inset 0 0 0 4px rgba(255, 255, 255, .08);
+  box-shadow: 0 .75rem 2rem rgba(255, 107, 53, .35), inset 0 0 0 4px rgba(255, 255, 255, .08);
   cursor: pointer;
   pointer-events: auto;
   transition: transform .3s cubic-bezier(.4, 0, .2, 1), box-shadow .3s ease;
@@ -98,7 +98,7 @@
 
 .robot-button:hover,
 .robot-button:focus-visible {
-  box-shadow: 0 1rem 2.5rem rgba(79, 157, 255, .55), inset 0 0 0 4px rgba(255, 255, 255, .14);
+  box-shadow: 0 1rem 2.5rem rgba(255, 107, 53, .5), inset 0 0 0 4px rgba(255, 255, 255, .14);
   transform: scale(1.1);
 }
 
